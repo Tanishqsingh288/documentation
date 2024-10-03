@@ -1,36 +1,171 @@
----
-title: About package README files
----
+This is the NPM package which Inputs the parameters and return the Current exchanged value of the given amount.
 
-To help others find your packages on npm and have a good experience using your code in their projects, we recommend including a README file in your package directory. Your README file may include directions for installing, configuring, and using the code in your package, as well as any other information a user may find helpful. The README file will be shown on the package page.
+sample usage code>>
 
-An npm package README file must be in the root-level directory of the package.
+const { convertCurrency } = require('curx');
 
-## Creating and adding a README.md file to a package
+// Example usage:
+convertCurrency('USD', 'EUR', 100) // Convert 100 USD to EURO
+    .then(result => console.log(`Exchanged value: €${result}`))
+    .catch(error => console.log(error));
 
-1. In a text editor, in your package root directory, create a file called `README.md`.
-2. In the `README.md` file, add useful information about your package.
-3. Save the `README.md` file.
 
-<Note>
 
-**Note:** The file extension `.md` indicates a Markdown file. For more information about Markdown, see the GitHub Guide "[Mastering Markdown](https://guides.github.com/features/mastering-markdown/#what)".
-
-</Note>
-
-## Updating an existing package README file
-
-The README file will only be updated on the package page when you publish a new version of your package. To update your README file:
-
-1. In a text editor, update the contents of the `README.md` file.
-
-2. Save the `README.md` file.
-
-3. On the command line, in the package root directory, run the following commands:
-
-   ```
-   npm version patch
-   npm publish
-   ```
-
-[markdown-link]: https://guides.github.com/features/mastering-markdown/#what
+Currency and their code:
+Afghan Afghani : AFN
+Albanian Lek : ALL
+Algerian Dinar : DZD
+Andorran Franc : ADP
+Angolan Kwanza : AOA
+East Caribbean Dollar : XCD
+Argentine Peso : ARS
+Armenian Dram : AMD
+Aruban Florin : AWG
+Australian Dollar : AUD
+Azerbaijani Manat : AZN
+Bahamian Dollar : BSD
+Bahraini Dinar : BHD
+Bangladeshi Taka : BDT
+Barbadian Dollar : BBD
+Belarusian Ruble : BYN
+Belgian Franc : BEF
+Belize Dollar : BZD
+Bhutanese Ngultrum : BTN
+Bolivian Boliviano : BOB
+Bosnian Convertible Mark : BAM
+Brazilian Real : BRL
+British Pound Sterling : GBP
+Brunei Dollar : BND
+Bulgarian Lev : BGN
+Burundian Franc : BIF
+Cambodian Riel : KHR
+Canadian Dollar : CAD
+Cape Verdean Escudo : CVE
+Central African CFA Franc : XAF
+Chilean Peso : CLP
+Chinese Yuan : CNY
+Colombian Peso : COP
+Comorian Franc : KMF
+Congolese Franc : CDF
+Costa Rican Colón : CRC
+Croatian Kuna : HRK
+Cuban Peso : CUP
+Czech Koruna : CZK
+Danish Krone : DKK
+Djiboutian Franc : DJF
+Dominican Peso : DOP
+Dutch Guilder : NLG
+East Caribbean Dollar : XCD
+Egyptian Pound : EGP
+El Salvador Colon : SVC
+Emirati Dirham : AED
+Fijian Dollar : FJD
+Finnish Markka : FIM
+French Franc : FRF
+Gambian Dalasi : GMD
+Georgian Lari : GEL
+German Mark : DEM
+Ghanaian Cedi : GHS
+Gibraltar Pound : GIP
+Greek Drachma : GRD
+Guatemalan Quetzal : GTQ
+Guinean Franc : GNF
+Guyanese Dollar : GYD
+Haitian Gourde : HTG
+Honduran Lempira : HNL
+Hong Kong Dollar : HKD
+Hungarian Forint : HUF
+Icelandic Króna : ISK
+Indian Rupee : INR
+Indonesian Rupiah : IDR
+Iranian Rial : IRR
+Iraqi Dinar : IQD
+Irish Pound : IEP
+Israeli New Shekel : ILS
+Italian Lira : ITL
+Jamaican Dollar : JMD
+Japanese Yen : JPY
+Jordanian Dinar : JOD
+Kazakhstani Tenge : KZT
+Kenyan Shilling : KES
+Kuwaiti Dinar : KWD
+Kyrgyzstani Som : KGS
+Lao Kip : LAK
+Latvian Lats : LVL
+Lebanese Pound : LBP
+Lesotho Loti : LSL
+Liberian Dollar : LRD
+Libyan Dinar : LYD
+Lithuanian Litas : LTL
+Macanese Pataca : MOP
+Macedonian Denar : MKD
+Malagasy Ariary : MGA
+Malawian Kwacha : MWK
+Malaysian Ringgit : MYR
+Maldivian Rufiyaa : MVR
+Maltese Lira : MTL
+Moroccan Dirham : MAD
+Mozambican Metical : MZN
+Myanmar Kyat : MMK
+Namibian Dollar : NAD
+Nepalese Rupee : NPR
+Netherlands Antillean Guilder : ANG
+New Zealand Dollar : NZD
+Nicaraguan Córdoba : NIO
+Nigerian Naira : NGN
+North Korean Won : KPW
+Norwegian Krone : NOK
+Omani Rial : OMR
+Pakistani Rupee : PKR
+Paraguayan Guarani : PYG
+Peruvian Sol : PEN
+Philippine Peso : PHP
+Polish Zloty : PLN
+Qatari Rial : QAR
+Romanian Leu : RON
+Russian Ruble : RUB
+Rwandan Franc : RWF
+Saint Helena Pound : SHP
+Salvadoran Colón : SVC
+Samoan Tala : WST
+Saudi Riyal : SAR
+Serbian Dinar : RSD
+Seychelles Rupee : SCR
+Sierra Leonean Leone : SLL
+Singapore Dollar : SGD
+Slovak Koruna : SKK
+Slovenian Tolar : SIT
+Solomon Islands Dollar : SBD
+Somali Shilling : SOS
+South African Rand : ZAR
+South Korean Won : KRW
+South Sudanese Pound : SSP
+Spanish Peseta : ESP
+Sri Lankan Rupee : LKR
+Sudanese Pound : SDG
+Surinamese Dollar : SRD
+Swedish Krona : SEK
+Swiss Franc : CHF
+Syrian Pound : SYP
+Tajikistani Somoni : TJS
+Tanzanian Shilling : TZS
+Thai Baht : THB
+Tongan Paʻanga : TOP
+Trinidad and Tobago Dollar : TTD
+Tunisian Dinar : TND
+Turkish Lira : TRY
+Turkmenistani Manat : TMT
+Ugandan Shilling : UGX
+Ukrainian Hryvnia : UAH
+United Arab Emirates Dirham : AED
+United Kingdom Pound : GBP
+United States Dollar : USD
+Uruguayan Peso : UYU
+Uzbekistan Som : UZS
+Vanuatu Vatu : VUV
+Vatican City Lira : VAL
+Venezuelan Bolívar : VES
+Vietnamese Dong : VND
+Yemeni Rial : YER
+Zambian Kwacha : ZMW
+Zimbabwean Dollar : ZWL
